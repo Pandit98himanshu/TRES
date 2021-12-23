@@ -1,2 +1,2 @@
-# TESWeb
-Train Enquiry System web app
+# TRES
+Train Reservation and Enquiry System
