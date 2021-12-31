@@ -3,8 +3,8 @@ package com.tres;
 import java.util.Map;
 
 public class StationManager {
-	Map<String,Station> map ;
-    
+	Map<String, Station> map;
+
 	public StationManager() {
 		super();
 	}
@@ -21,7 +21,5 @@ public class StationManager {
 	public void setMap(Map<String, Station> map) {
 		this.map = map;
 	}
-	
-	
 
 }
