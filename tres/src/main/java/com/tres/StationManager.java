@@ -4,6 +4,10 @@ import java.util.Map;
 
 public class StationManager {
 	Map<String,Station> map ;
+    
+	public StationManager() {
+		super();
+	}
 
 	public StationManager(Map<String, Station> map) {
 		super();
