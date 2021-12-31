@@ -56,7 +56,7 @@ public class EnquiryManager {
 		this.day = day;
 	}
 
-	public boolean validateDate(String d) {
+	public boolean isValidDate(String d) {
 
 		try {
 
@@ -74,7 +74,7 @@ public class EnquiryManager {
 		return false;
 	}
 
-	public boolean validateStation(String stn) {
+	public boolean isValidStation(String stn) {
 		StationManager sm = new StationManager();
 		Map<String, Station> map = sm.getMap();
 		if (map.containsKey(stn))
@@ -82,5 +82,17 @@ public class EnquiryManager {
 
 		return false;
 	}
+	
+	public String dateToDay(String s)
+	{
+		if(isValidDate(s))
+		{
+			LocalDate d = LocalDate.parse(s);
+			
+			return String.valueOf(d.getDayOfWeek());
+		}
+		return null;
+	}
+	
 
 }
