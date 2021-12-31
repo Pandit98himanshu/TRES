@@ -1,6 +1,7 @@
 package com.tres;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeParseException;
 import java.util.Date;
 import java.util.Map;
@@ -82,17 +83,23 @@ public class EnquiryManager {
 
 		return false;
 	}
-	
-	public String dateToDay(String s)
-	{
-		if(isValidDate(s))
-		{
+
+	/**
+	 * Converts {@link Date} to week-day
+	 * @param s
+	 * @return
+	 */
+	public String dateToDay(String s) {
+		if (isValidDate(s)) {
 			LocalDate d = LocalDate.parse(s);
-			
+
 			return String.valueOf(d.getDayOfWeek());
 		}
 		return null;
 	}
 	
+	public LocalDateTime getArrivalDate(LocalDateTime srcDepartureTime, int minutes) {
+		return srcDepartureTime.plusMinutes(minutes);
+	}
 
 }
