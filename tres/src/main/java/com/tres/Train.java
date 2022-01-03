@@ -43,6 +43,11 @@ public class Train {
 	public void setHalts(Map<String, Halt> halts) {
 		this.halts = halts;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString();
+	}
 	
 	
 }

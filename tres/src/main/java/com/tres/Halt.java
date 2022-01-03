@@ -1,12 +1,12 @@
 package com.tres;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Halt {
 	
 	private int number;
-	private Date arrTime;
-	private Date depTime;
+	private LocalDateTime arrTime;
+	private LocalDateTime depTime;
 	private int durationFromSrc;
 	
 	
@@ -14,7 +14,7 @@ public class Halt {
 		super();
 	}
 
-	public Halt(int number, Date arrTime, Date depTime, int durationFromSrc) {
+	public Halt(int number, LocalDateTime arrTime, LocalDateTime depTime, int durationFromSrc) {
 		super();
 		this.number = number;
 		this.arrTime = arrTime;
@@ -30,19 +30,19 @@ public class Halt {
 		this.number = number;
 	}
 
-	public Date getArrTime() {
+	public LocalDateTime getArrTime() {
 		return arrTime;
 	}
 
-	public void setArrTime(Date arrTime) {
+	public void setArrTime(LocalDateTime arrTime) {
 		this.arrTime = arrTime;
 	}
 
-	public Date getDepTime() {
+	public LocalDateTime getDepTime() {
 		return depTime;
 	}
 
-	public void setDepTime(Date depTime) {
+	public void setDepTime(LocalDateTime depTime) {
 		this.depTime = depTime;
 	}
 
