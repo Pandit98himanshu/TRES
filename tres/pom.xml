@@ -15,14 +15,15 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+  	<!-- https://mvnrepository.com/artifact/junit/junit -->
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.13.2</version>
+	    <scope>test</scope>
+	</dependency>
     
-      <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 	<dependency>
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-context</artifactId>
@@ -91,13 +92,6 @@
 	    <version>5.3.14</version>
 	</dependency>
 
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-jdbc</artifactId>
-	    <version>5.3.14</version>
-	</dependency>
-
 	<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
 	<dependency>
 	    <groupId>org.springframework</groupId>
@@ -105,34 +99,6 @@
 	    <version>5.3.14</version>
 	</dependency>
 	
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-aspects</artifactId>
-	    <version>5.3.14</version>
-	</dependency>
-
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-tx</artifactId>
-	    <version>5.3.14</version>
-	</dependency>
-
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-orm</artifactId>
-	    <version>5.3.14</version>
-	</dependency>
-
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-jms -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-jms</artifactId>
-	    <version>5.3.14</version>
-	</dependency>
-
 	<!-- https://mvnrepository.com/artifact/org.springframework/spring-r2dbc -->
 	<dependency>
 	    <groupId>org.springframework</groupId>
