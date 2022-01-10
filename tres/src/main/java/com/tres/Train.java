@@ -46,8 +46,7 @@ public class Train {
 
 	@Override
 	public String toString() {
-		return super.toString();
+		return "Train [id=" + id + ", name=" + name + ", halts=" + halts + "]";
 	}
-	
-	
+
 }

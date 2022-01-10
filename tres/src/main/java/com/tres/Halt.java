@@ -53,6 +53,12 @@ public class Halt {
 	public void setDurationFromSrc(int durationFromSrc) {
 		this.durationFromSrc = durationFromSrc;
 	}
+
+	@Override
+	public String toString() {
+		return "Halt [number=" + number + ", arrTime=" + arrTime + ", depTime=" + depTime + ", durationFromSrc="
+				+ durationFromSrc + "]";
+	}
 	
 	
 }

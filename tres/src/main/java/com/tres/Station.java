@@ -44,5 +44,10 @@ public class Station {
 	public void setTrainsOnDay(Map<String, List<Train>> trainsOnDay) {
 		this.trainsOnDay = trainsOnDay;
 	}
+
+	@Override
+	public String toString() {
+		return "Station [code=" + code + ", name=" + name + ", trainsOnDay=" + trainsOnDay + "]";
+	}
 	
 }
