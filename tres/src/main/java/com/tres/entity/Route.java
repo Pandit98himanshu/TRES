@@ -15,7 +15,7 @@ import java.sql.Time;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "schedule")
+@Table(name = "route")
 public class Route {
 
     @EmbeddedId
