@@ -2,4 +2,6 @@
 .iml
 *.eclipse
 .git
+.idaa
+/.idea/
 /.metadata/
