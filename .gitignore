@@ -3,3 +3,6 @@
 *.eclipse
 .git
 /.metadata/
+.classpath
+.project
+.idea/
