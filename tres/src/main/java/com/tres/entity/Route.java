@@ -3,10 +3,7 @@ package com.tres.entity;
 import com.tres.compositekey.CompositeKeyRoute;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Time;
 
 @Getter
@@ -14,10 +11,20 @@ import java.sql.Time;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode
 @Entity
 @Table(name = "route")
 public class Route {
 
+/*
+    @Id
+    @Column(name = "id")
+    private int id;
+    @Column(name = "train_id")
+    private int trainId;
+    @Column(name = "station_code")
+    private String stationCode;
+*/
     @EmbeddedId
     private CompositeKeyRoute id;
     @Column(name = "halt_no")
