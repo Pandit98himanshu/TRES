@@ -25,11 +25,6 @@ public class App implements CommandLineRunner {
 	@Autowired
 	SearchService search;
 
-	public void func() {
-//		System.out.println(search.convertDateToWeekDay("26-2-2022"));
-
-
-	}
 	public static void main(String[] args) {
 		SpringApplication.run(App.class, args);
 	}
@@ -37,11 +32,17 @@ public class App implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		List<Schedule> res = search.getTrainsDepFromSourceOnDay("SDAH", "thu");
-		res.forEach(i -> System.out.println(i.getTrainId()));
+		res.forEach(System.out::println);
 
+		System.out.println("=============Src============");
 		List<Route> resSrc = search.getTrainsDepartsFromSrc(res, "SDAH");
-		System.out.println(resSrc);//resSrc.forEach(i -> System.out.println(i.getTrainId()));
+		resSrc.forEach(System.out::println);
+		System.out.println("=============Dest============");
+		List<Route> resDest = search.getTrainsArrivesAtDest(res, "PRNA");
+		resDest.forEach(System.out::println);
 
-		//		List<Result> res1 = search.searchTrains("SDAH", "PRNA", "24-2-2022");
+		System.out.println("=============Ans============");
+		List<Result> res1 = search.searchTrains("SDAH", "PRNA", "2022-2-24");
+		res1.forEach(System.out::println);
 	}
 }

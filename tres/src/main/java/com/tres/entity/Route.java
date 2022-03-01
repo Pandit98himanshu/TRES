@@ -16,7 +16,6 @@ import java.sql.Time;
 @Table(name = "route")
 public class Route {
 
-/*
     @Id
     @Column(name = "id")
     private int id;
@@ -24,9 +23,10 @@ public class Route {
     private int trainId;
     @Column(name = "station_code")
     private String stationCode;
-*/
+/*
     @EmbeddedId
     private CompositeKeyRoute id;
+*/
     @Column(name = "halt_no")
     private int haltNo;
     @Column(name = "day")

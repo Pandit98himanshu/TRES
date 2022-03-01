@@ -8,9 +8,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface EnquiryRouteRepo extends JpaRepository<Route, CompositeKeyRoute> {
+public interface EnquiryRouteRepo extends JpaRepository<Route, Integer> {
 
-//    public List<Route> findByTrainIdAndStationCode(int trainId, String stationCode);
+    public List<Route> findByTrainIdAndStationCode(int trainId, String stationCode);
 
-//    public Route getByTrainIdAndStationCode(int trainId, String src);
 }
