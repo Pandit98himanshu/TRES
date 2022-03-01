@@ -13,7 +13,11 @@ import java.sql.Time;
 public class Result {
 
     int trainId;
+    String trainName;
+    String src;
     Time depFromSrc;
+    String dest;
     Time arrAtDest;
+    int daysRequired;
 
 }

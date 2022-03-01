@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Getter
@@ -15,8 +16,11 @@ import java.io.Serializable;
 @Embeddable
 public class CompositeKeyRoute implements Serializable {
 
+    @NotNull
     @Column(name = "train_id")
     private int trainId;
+
+    @NotNull
     @Column(name = "station_code")
     private String stationCode;
 

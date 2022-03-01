@@ -1,9 +1,6 @@
 package com.tres;
 
-import java.util.List;
-
-import com.tres.entity.Schedule;
-import com.tres.service.SearchService;
+import com.tres.service.SearchServiceImpl;
 import org.junit.Test;
 
 public class AppTest {
@@ -14,8 +11,6 @@ public class AppTest {
 
 	@Test
 	public void searchServiceTest() throws Exception {
-		SearchService search = new SearchService();
-
-		System.out.println(search.convertDateToWeekDay("27-2-2022"));
+		SearchServiceImpl search = new SearchServiceImpl();
 	}
 }
