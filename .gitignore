@@ -5,3 +5,6 @@
 .idaa
 /.idea/
 /.metadata/
+.classpath
+.project
+.idea/
