@@ -15,14 +15,6 @@ import java.util.List;
 public class App implements CommandLineRunner {
 
 	@Autowired
-	SearchService search;
-
-	public static void main(String[] args) {
-		SpringApplication.run(App.class, args);
-	}
-
-	@Override
-	public void run(String... args) {
 		/*
 		List<Schedule> res = search.getTrainsDepFromSourceOnDay("SDAH", "thu");
 		res.forEach(System.out::println);
@@ -34,8 +26,16 @@ public class App implements CommandLineRunner {
 		List<Route> resDest = search.getTrainsArrivesAtDest(res, "PRNA");
 		resDest.forEach(System.out::println);
 		*/
-		System.out.println("=============Ans============");
-		List<Result> res1 = search.searchTrains("SDAH", "PRNA", "thu");
+			System.out.println("=============Ans============");
+	List<Result> res1 = search.searchTrains(
+	SearchService search;
+
+	public static void main(String[] args) {
+		SpringApplication.run(App.class, args);
+	}
+
+	@Override
+	public void run(String... args) {"SDAH", "PRNA", "thu");
 		res1.forEach(System.out::println);
 	}
 }
