@@ -1,9 +1,10 @@
 # TRES
-Train Reservation and Enquiry System 
+<h1>Train Reservation and Enquiry System </h1>
 
-//First step 
+- This is an application which should reserve a train ticket and give schedule of trains as per your enquiry.
 
-//Second step
+- Currently we are only implementing an enquiry system and keeping reservation system in queue.
 
-Implementing Database
-
+Future releases includes:
+1. Reservation system for booking train tickets based on your journey requirements.
+2. Separate microservices for reservation system and enquiry system.
